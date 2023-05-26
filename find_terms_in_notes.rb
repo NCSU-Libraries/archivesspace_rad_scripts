@@ -37,15 +37,7 @@ def values_to_row(hash,term)
     if h == 'term'
       term
     elsif hash[h]
-      if hash[h].include? 'resources'
-        hash[h].gsub!( /\/repositories\/\d\//, 'https://staff.archivesspace.lib.ncsu.edu/' )
-      elsif hash[h].include? 'archival_objects'
-        hash[h].gsub!( /\/repositories\/\d\/archival_objects\//, 'https://staff.archivesspace.lib.ncsu.edu/resolve/readonly?uri=\0' )
-      elsif hash[h].include? 'digital_objects'
-        hash[h].gsub!( /\/repositories\/\d\//, 'https://staff.archivesspace.lib.ncsu.edu/' )
-      elsif hash[h].include? 'agents'
-        hash[h].gsub!( /\/agents\/people\//, 'https://staff.archivesspace.lib.ncsu.edu/resolve/readonly?uri=/agents/people/\0' )
-      elsif hash[h].is_a? String
+      if hash[h].is_a? String
         hash[h].strip.gsub(/[\n\r]+/, ' | ')
       else
         hash[h]
