@@ -1,0 +1,32 @@
+GIT
+  remote: https://github.com/trevorthornton/archivesspace-api-utility.git
+  revision: 3c6839f08383fc9b60fdc874cf01a2acd095f1bc
+  specs:
+    archivesspace-api-utility (0.0.7)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (7.0.4)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+    concurrent-ruby (1.1.10)
+    i18n (1.12.0)
+      concurrent-ruby (~> 1.0)
+    minitest (5.16.3)
+    mysql2 (0.5.4)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
+
+PLATFORMS
+  x86_64-darwin-20
+
+DEPENDENCIES
+  activesupport
+  archivesspace-api-utility!
+  mysql2
+
+BUNDLED WITH
+   2.3.22
