@@ -1,7 +1,9 @@
-# archivesspace_rad_scripts
+# ArchivesSpace RAD (reparative archival description) scripts
 
-This script takes a text file of potentially problematic terms and searches the notes field of ArchivesSpace records for them. 
-It generates a csv file of those records so that they can be reviewed and updated if needed.  
+This repository contains Ruby scripts to facilitate reparative archival description in ArchivesSpace.
+
+Currently there is just one script, which takes a text file containing terms (one per line) and finds those terms in notes included in ArchivesSpace records. 
+It generates a CSV file listing those records and the note content so that they can be reviewed and updated if needed.
 
 # Usage
 
